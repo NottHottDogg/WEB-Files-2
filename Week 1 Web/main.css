@@ -1,0 +1,16 @@
+body {
+  background-color: black;
+}
+section {
+  color: white;
+  font-family: "Roboto", fantasy;
+  letter-spacing: 2px;
+  padding: 5%;
+
+}
+.borders{
+  border-style: ridge;
+  border-width: medium;
+  border-color: white;
+  padding: 10px;
+}
