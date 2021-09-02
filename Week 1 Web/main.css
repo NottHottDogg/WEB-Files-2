@@ -14,3 +14,8 @@ section {
   border-color: white;
   padding: 10px;
 }
+td,th {
+  border: 2px solid white;
+  text-align: left;
+  padding: 4px;
+}
