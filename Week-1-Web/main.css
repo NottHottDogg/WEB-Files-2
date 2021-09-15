@@ -9,7 +9,7 @@ body {
 }
 section {
   color: #BDE1FF;
-  font-family: "Roboto", fantasy;
+  font-family: "Optima";
   font-size: 18px;
   letter-spacing: 2px;
   padding: 2%;
@@ -31,7 +31,7 @@ td,th {
   padding: 15px;
 }
 img{
-  border-radius: 20px
+  border-radius: 100px
 }
 .parallax{
   /*learned about parallax scrolling from w3school.com/howto/howto_css_parallax*/
