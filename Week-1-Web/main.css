@@ -13,8 +13,18 @@ section {
   font-size: 18px;
   letter-spacing: 2px;
   padding: 2%;
-
-
+}
+a:link{
+  color: blue;
+}
+a:visited{
+  color: aquamarine;
+}
+a:hover{
+  color: pink;
+}
+a:active{
+  color: yellow;
 }
 .borders{
   border-radius: 20px;
