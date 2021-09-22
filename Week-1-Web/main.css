@@ -16,14 +16,10 @@ img{
   margin-top: 1vw;
 }
 .saturate { filter: saturate(3); }
-.grayscale { filter: grayscale(100%); }
 .contrast { filter: contrast(160%); }
-.brightness { filter: brightness(0.25); }
-.blur { filter: blur(3px); }
 .invert { filter: invert(100%); }
-.sepia { filter: sepia(100%); }
 .huerotate { filter: hue-rotate(180deg); }
-.rss.opacity { filter: opacity(50%); }
+
 .clickMe {
   background-color: #FF0DFF;
   border: none;
@@ -32,7 +28,7 @@ img{
   padding: 15px 32px;
   text-align: center;
   display: inline-block;
-  margin: 20px 0px 0px -5px;
+  margin: 20px;
   cursor: pointer;
   transition-duration: 0.4s;
 }
