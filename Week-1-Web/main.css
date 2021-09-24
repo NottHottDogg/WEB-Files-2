@@ -33,9 +33,7 @@ a:hover{
   color: #751FF0;
 }
 ul{
-  margin: 0;
-  padding: 0;
-  display: flex;
+  display: inline-flex;
 }
 li{
   margin: 0 1vw;
@@ -63,6 +61,17 @@ legend{
 }
 img{
   border-radius: 20px;
+}
+img:hover{
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0%{
+      filter: opacity(33%);
+    }
+    100%{
+      filter: opacity(0%)
+    }
 }
 /*looked these filter options up on google and thought it'd be fun to play with*/
 .saturate { filter: saturate(3); }
@@ -96,7 +105,7 @@ img{
   margin-left: 2.5vw;
 }
 .push{
-  margin-left: 3.2vw;
+  margin-left: 12.5vw;
 }
 
 #content {
