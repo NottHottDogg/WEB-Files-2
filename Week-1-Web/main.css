@@ -27,9 +27,7 @@ section {
   font-family: 'Bauhaus Modern', sans-serif;
   letter-spacing: 2px;
 }
-a{
-  color: black;
-}
+
 /* hover color is different than depicted on style guide to provide stricter adherence to accessibility standards and increase contrast + I really like the blue spacey glow*/
 a:hover{
   color: #751FF0;
