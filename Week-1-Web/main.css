@@ -50,10 +50,12 @@ nav{
 h1{
   font-size: 96px;
   font-weight: lighter;
+  font-family: 'Bauhaus Modern', sans-serif !important;
 }
 h2{
   font-size: 60px;
   font-weight: lighter;
+  font-family: 'Bauhaus Modern', sans-serif !important;
 }
 h3{
   font-size: 48px;
