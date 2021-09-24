@@ -11,9 +11,11 @@ body {
 }
 section{
   padding: 10px;
+  z-index: -10;
 }
-img{
-  margin-top: 1vw;
+object{
+  height: 100%;
+  width: 100%;
 }
 fieldset{
   border-radius: 10px;
@@ -35,6 +37,7 @@ a:hover{
 ul{
   display: inline-flex;
 }
+
 li{
   margin: 0 1vw;
   font-size: 32px;
@@ -107,16 +110,16 @@ img:hover{
 .push{
   margin-left: 12.5vw;
 }
-
-#content {
-  position:relative;
-}
-
-.ribbon {
-  position:absolute;
-  top:0;
-  right:0;
-}
 iframe{
   border: none;
 }
+
+/*
+#logoBox{
+  top: 0px;
+  right: 0px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+}
+*/
