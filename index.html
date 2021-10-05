@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <link rel="stylesheet" href="Week-1-Web/main.css">
+  <link id="myStyles" rel="stylesheet" href="Week-1-Web/main.css">
   <link href="http://fonts.cdnfonts.com/css/bauhaus-modern" rel="stylesheet">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <meta charset="utf-8">
@@ -40,9 +40,15 @@
         <img class="invert" src="Week-1-Web/Assets/steven.JPG" alt="Steven Mann at a CU Football Game" >
         <h1>Steven R. Mann</h1>
         <strong>He|Him|His </strong><br>
-          <button class="clickMe" type="button">cool site</button>
-          <button class="clickMe" type="button">Lame site</button>
+          <button id="CoolButton" class="clickMe" type="button">cool site</button>
+          <button id="LameButton" class="clickMe" type="button">Lame site</button>
       </fieldset>
+      <!--
+      Possible fix for the middle sections evenly spaced
+      <div style="display: flex; flex-direction: column">
+        <div style="display: flex; flex-direction: row"></div>
+      </div>
+      -->
       <fieldset class="w3-container w3-center w3-animate-right">
         <legend>So whats up with this guy?</legend>
         <div>
@@ -102,4 +108,21 @@
       </fieldset>
     </section>
   </body>
+  <script>
+ // removes any CSS applied to the html page by changing the href of style // sheet
+
+  var RemoveStyle = document.getElementById("LameButton")
+  RemoveStyle.addEventListener("click", makeLamePage)
+  function makeLamePage() {
+    document.getElementById("myStyles").href=" "
+    }
+
+
+var RestoreStyles = document.getElementById("CoolButton")
+RestoreStyles.addEventListener("click", makeCoolPage)
+function makeCoolPage() {
+  document.getElementById("myStyles").href="Week-1-Web/main.css"
+}
+
+  </script>
 </html>
