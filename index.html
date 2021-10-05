@@ -107,22 +107,19 @@
         </ul>
       </fieldset>
     </section>
-  </body>
-  <script>
- // removes any CSS applied to the html page by changing the href of style // sheet
+    <script>
+   // removes any CSS applied to the html page by changing the href of style // sheet
 
-  var RemoveStyle = document.getElementById("LameButton")
-  RemoveStyle.addEventListener("click", makeLamePage)
-  function makeLamePage() {
-    document.getElementById("myStyles").href=" "
+    var RemoveStyle = document.getElementById("LameButton")
+    RemoveStyle.addEventListener("click", makeLamePage)
+    function makeLamePage() {
+      document.getElementById("myStyles").href=" "
+      }
+    var RestoreStyles = document.getElementById("CoolButton")
+    RestoreStyles.addEventListener("click", makeCoolPage)
+    function makeCoolPage() {
+      document.getElementById("myStyles").href="Week-1-Web/main.css"
     }
-
-
-var RestoreStyles = document.getElementById("CoolButton")
-RestoreStyles.addEventListener("click", makeCoolPage)
-function makeCoolPage() {
-  document.getElementById("myStyles").href="Week-1-Web/main.css"
-}
-
-  </script>
+    </script>
+  </body>
 </html>
