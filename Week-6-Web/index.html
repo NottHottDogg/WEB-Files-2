@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quote Machine</title>
+    <link rel="stylesheet" href="../Week-1-Web/main.css">
+  </head>
+  <body>
+    <section>
+      <h1>This is a quote generator</h1>
+      <h2>click the button to receive a quote</h2>
+      <button id="btn" type="button" name="generate" class="clickMe">Press for Quote</button>
+    </section>
+    <script type="text/javascript">
+
+      const quotes=["I'm sick of following my dreams man, I'm just going to ask where they're going and hook up with em later","I want a vending machine that sells vending machines...","I got two straws in my drink, incase one breaks down.","I want a cinnamon roll scented candle so my roomates will wake up with false hopes","I'm against picketing- but I'm not sure how to show it"]
+
+      document.getElementById("btn").addEventListener("click", buttonClicked)
+
+      let i = 0;
+
+
+      function buttonClicked(){
+        i += 1
+        alert(quotes[i]);
+        if (i >= 4) {
+          i = 0
+        }
+      }
+    </script>
+  </body>
+</html>
