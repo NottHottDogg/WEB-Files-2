@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>self care tasks</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <style media="screen">
+        .card{
+          width: 18rem;
+        }
+        body{
+          background-color:black;
+          color: White;
+          background-color: #ff7700;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23c50027' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23a30021' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23be004c' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%239c003f' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23b8006e' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%2396005a' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23b1008d' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%238f0072' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: bottom;
+          background-repeat: no-repeat;
+          background-color: #CC5007;
+          margin: 10px;
+        }
+      </style>
+  </head>
+  <body>
+   <section class="row">
+     <div class="card">
+        <div class="card-header bg-primary">
+          <h1>Monday</h1>
+          <div id="Monday" class="card-body">
+             <ul>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-check-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Stretch for 1 hour
+                </label>
+               </li>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-che-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Read for 30 minutes
+                </label>
+               </li>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-che-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Make fancy coffee
+                </label>
+               </li>
+             </ul>
+          </div>
+          <div class="card-footer">
+            <button id="btn" type="button" name="button" class="btn-danger" onclick="checkTheBoxes('Monday')">Toggle All</button>
+          </div>
+        </div>
+      </div>
+        <div class="card">
+        <div class="card-header bg-primary">
+          <h1>Tuesday</h1>
+          <div id="Tuesday" class="card-body">
+             <ul>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-check-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Play your guitar
+                </label>
+               </li>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-che-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Get a hair cut
+                </label>
+               </li>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-che-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                    Epsom salt bath
+                </label>
+               </li>
+             </ul>
+          </div>
+          <div class="card-footer">
+            <button id="btn" type="button" name="button" class="btn-danger" onclick="checkTheBoxes('Tuesday')">Toggle All</button>
+          </div>
+        </div>
+      </div>
+        <div class="card">
+        <div class="card-header bg-primary">
+          <h1>Wednesday</h1>
+          <div id="Wednesday" class="card-body">
+             <ul>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-check-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Go to the gym
+                </label>
+               </li>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-che-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Hike with Lily
+                </label>
+               </li>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-che-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Try something new
+                </label>
+               </li>
+             </ul>
+          </div>
+          <div class="card-footer">
+            <button id="btn" type="button" name="button" class="btn-danger" onclick="checkTheBoxes('Wednesday')">Toggle All</button>
+          </div>
+        </div>
+      </div>
+        <div class="card">
+        <div class="card-header bg-primary">
+          <h1>Thursday</h1>
+          <div id="Thursday" class="card-body">
+             <ul>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-check-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Watch a scary movie
+                </label>
+               </li>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-che-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Retail Therapy
+                </label>
+               </li>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-che-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Go to PF Changs
+                </label>
+               </li>
+             </ul>
+          </div>
+          <div class="card-footer">
+            <button id="btn" type="button" name="button" class="btn-danger" onclick="checkTheBoxes('Thursday')">Toggle All</button>
+          </div>
+        </div>
+      </div>
+        <div class="card">
+        <div class="card-header bg-primary">
+          <h1>Friday</h1>
+          <div id="Friday" class="card-body">
+             <ul>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-check-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   sleep in
+                </label>
+               </li>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-che-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Make pancakes
+                </label>
+               </li>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-che-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Fly Fish clear creek
+                </label>
+               </li>
+             </ul>
+          </div>
+          <div class="card-footer">
+            <button id="btn" type="button" name="button" class="btn-danger" onclick="checkTheBoxes('Friday')">Toggle All</button>
+          </div>
+        </div>
+      </div>
+        <div class="card">
+        <div class="card-header bg-warning">
+          <h1>Saturday</h1>
+          <div id="Saturday" class="card-body">
+             <ul>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-check-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Go Geocaching
+                </label>
+               </li>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-che-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Apply to jobs
+                </label>
+               </li>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-che-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Apartment Hunt
+                </label>
+               </li>
+             </ul>
+          </div>
+          <div class="card-footer">
+            <button id="btn" type="button" name="button" class="btn-primary" onclick="checkTheBoxes('Saturday')">Toggle All</button>
+          </div>
+        </div>
+      </div>
+        <div class="card">
+        <div class="card-header bg-warning">
+          <h1>Sunday</h1>
+          <div id="Sunday" class="card-body">
+             <ul>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-check-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Brunch
+                </label>
+               </li>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-che-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Hike Redrocks
+                </label>
+               </li>
+               <li>
+                 <input class="form-check-input" type="checkbox" value="">
+                 <label class="form-che-label" for="flexCheckIndeterminate" action="index.html" method="post">
+                   Meal Prep
+                </label>
+               </li>
+             </ul>
+          </div>
+          <div class="card-footer">
+            <button id="btn" type="button" name="button" class="btn-primary" onclick="checkTheBoxes('Sunday')">Toggle All</button>
+          </div>
+        </div>
+      </div>
+   </section>
+
+
+  <script>
+    // document.getElementById("btn").addEventListener("click", function(){
+    //   //Get all the cb elements
+    //     const checkboxElements = document.querySelectorAll('input[type="checkbox"]');
+    //     //loop through them and set checked == true
+    //     for(var i = 0; i < checkboxElements.length; i++){
+    //       var checkbox = checkboxElements[i];
+    //       checkbox.checked = true;
+    //     }
+    // });
+    function checkTheBoxes(dayOfWeek){
+      //pass day of week onclick to fetch parent div (the card)
+      let container = document.querySelector('#' + dayOfWeek);
+      let checkboxElementsInContainer = container.querySelectorAll('input[type="checkbox"]');
+      //loop through them and set checked == true
+      for(var i = 0; i < checkboxElementsInContainer.length; i++){
+        var checkbox = checkboxElementsInContainer[i];
+        if(!checkbox.checked){
+          checkbox.checked = true;
+        }else{
+          checkbox.checked = false;
+        }
+      }
+    }
+  </script>
+
+  </body>
+</html>
