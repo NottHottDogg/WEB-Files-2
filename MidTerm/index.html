@@ -10,7 +10,7 @@
   </head>
   <body>
     <!-- body will have 7 cards. Each card will have 3 tasks associated with it, and can be 'selected' to show complete, or you can have the option to complete all -->
-    <section class="row">
+    <section class="row parallax">
       <div class="card">
          <div class="card-header weekday">
            <h1>Monday</h1>
@@ -228,13 +228,17 @@
          </div>
        </div>
        <!-- end of card 7-->
+
+
     </section>
     <script>
       function checkTheBoxes(dayOfWeek){
         //pass day of week onclick to fetch parent div (the card)
+        //this is a change from last method that scopes to each 'day of week' since previously
+        //the click button was triggering every card
         let container = document.querySelector('#' + dayOfWeek);
         let checkboxElementsInContainer = container.querySelectorAll('input[type="checkbox"]');
-        //loop through them and set checked == true
+        //loop through them and set checked == true if currently false
         for(var i = 0; i < checkboxElementsInContainer.length; i++){
           var checkbox = checkboxElementsInContainer[i];
           if(!checkbox.checked){
